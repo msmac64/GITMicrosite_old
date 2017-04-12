@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Graphic Information Technology</title>
+	<meta name="description" content="Arizona State University microsite">
+	<meta name="author" content="Cathy McClure">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/simplegrid.css">
+	<link rel="stylesheet" href="css/custom.css">
+	
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- 	!Modernizr - All other JS at bottom -->
+	<script src="js/modernizr-v2.8.3.js"></script> 
+
+	<!-- Icons
+	================================================== -->
+	<link href="https://file.myfontastic.com/oZurNjKUTzgeiLXYvgWGAG/icons.css" rel="stylesheet">
+		<script src="js/Chart.min.js"></script>
+		<script src="js/Chart.HorizontalBar.js"></script>
+<!-- 		<script src="js/bar.js"></script> -->
+
+</head>
+<body>
+	
+<!-- 	Header -->
+
+	<header role="banner">
+		<div class="grid grid-pad">
+			<div class="col-1-1">
+				<img class="logo" src="images/ASU_engineering_logo.png" alt="ASU logo"/>
+			</div>
+		</div>
+	</header>
+	 
+<!-- Navigation -->	
+
+	<nav class="navbar">
+		<div class="grid">
+			<div class="col-1-1">
+				<ul class="navlist">
+					<li class="menu-item"><a href="http://www.public.asu.edu/~clmcclur/GITMicrosite_old/index.html" title="Home">home</a></li>
+					<li class="menu-item"><a href="http://www.public.asu.edu/~clmcclur/GITMicrosite_old/courses.html" title="Courses">courses</a></li>
+					<li class="menu-item"><a href="http://www.public.asu.edu/~clmcclur/GITMicrosite_old/resources.html" title="Resources">resources</a></li>
+					<li class="menu-item"><a href="http://www.public.asu.edu/~clmcclur/GITMicrosite_old/careers.html" title="Careers">careers</a></li>
+					<li class="menu-item"><a href="http://www.public.asu.edu/~clmcclur/GITMicrosite_old/gallery.html" title="Gallery">gallery</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+<!-- Hero Unit -->
+
+	<section class="hero4">
+		<div class="grid grid-pad">
+			<div class="col-1-1">
+				<p class="hero-text">
+					<span class="maroon">opportunities</span> <span class="white">for a</span> <span class="golden">brighter future</span>
+				</p>
+			</div>
+		</div>
+	</section>
+
+<!-- Careers Content -->
+
+	<section>
+		<div class="grid grid-pad">
+			<div class="col-6-12">
+				<h1>Graphic Information Technology Program</h1>
+				<p>The cross-media nature of the graphic information industry requires tomorrow's graduates to understand the full spectrum of graphic technology, publishing processes and current business practices.</p>
+			</div>
+			<div class="col-5-12 push-1-12">
+				<h1>Learn</h1>
+				<p class="spacer">The graphic information technology program prepares students for a seamless career as a graphic technologist encompassing Web design and development, printing and digital publishing, commercial photography and videography, and technical imaging.</p>
+			</div>
+			
+			<div>
+				<a href="https://www.asu.edu/ugapp">
+					<center><button class="center line" type="button">apply</button></center>
+				</a>
+			</div>
+		</div> 
+	</section><!-- End section -->
+	
+	<section class="panel">
+		<div class="grid grid-pad">
+			<div class="col-1-1">
+				<h1>Career Opportunities for GIT Graduates</h1>
+				<h3>Median Salary (2014)*</h3>
+				<canvas id="barChart" width="700" height="500">Your browser does not support canvas</canvas>
+			</div>
+			<div>
+				<p class="source">*Data obtained from the Occupational Information Network (O*NET) under sponsorship of the U.S. Department of Labor/Employment and Training Administration (USDOL/ETA).</p>
+			</div>
+		</div>
+	</section><!-- End section -->
+<!-- Footer -->	
+
+	<footer role="contentinfo">
+		<div class="grid">
+			<div class="col-1-3">
+				<address>
+					Graphic Information Technology<br>
+					Picacho Hall 245<br>
+					7171 E. Sonoran Arroyo Mall<br>
+					Mesa, AZ 85212<br>
+					<a class="email" href="mailto:ask.git@asu.edu">ask.git@asu.edu</a>
+				</address> 
+			</div>
+			<div class="col-1-3 push-1-3">
+				<div class="social">
+					<div class="icon-twitter"></div>
+					<div class="icon-facebook"></div>
+					<div class="icon-rss"></div>
+				</div>
+			</div>
+		</div>
+	</footer>	
+	
+	
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script>
+		var randomScalingFactor = function() {
+			return Math.round(Math.random()*100);
+		};
+		
+		var data = {
+		labels: ['Art Directors', 'Desktop Publishers', 'Film and Video Editors', 'Graphic Designers', 'Multimedia Artists and Animators', 'Photographers', 'Prepress Technicians and Workers', 'Search Engine Strategist', 'Video Game Designers', 'Web Developers'],
+		datasets: [
+			{
+				label: 'Careers',
+				fillColor: 'rgba(120, 190, 32, 0.5)',
+				highlightFill: 'rgba(255, 179, 16, 0.5)',
+				data: [85610, 38200, 57210, 45900, 63630, 30490, 37200, 83410, 83410, 63490]
+			}
+		]
+	};
+	window.onload = function() {
+			var ctx = $('#barChart').get(0).getContext('2d');
+			var chart = new Chart(ctx).HorizontalBar(data, {
+		barStrokeWidth: 1,
+		responsive: true,
+		animation: true,
+		barShowStroke: false
+		});
+	};
+		 
+	</script>
+</body>
+</html> 

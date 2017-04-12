@@ -1,0 +1,562 @@
+/* #Colors and Fonts
+==================================================
+	Gold = ffb310; 255, 179, 16
+	Maroon = 990033;  153, 0, 51
+	Dk. Gray = #4F5557
+	Lt. Gray = f1f1f1
+	Green = RGB 120-190-32
+			#78BE20
+	"Akzindenz-Grotesk Pro", Roboto, Arial, sans-serif
+	h1 = 24 pixels → 24 ÷ 16 = 1.5 ems
+	h2 = 22 pixels → 22 ÷ 16 = 1.375 ems
+	h3 = 20 pixels → 20 ÷ 16 = 1.25 ems
+	h4 = 18 pixels → 18 ÷ 16 = 1.125 ems
+	h5 = 16 pixels → 16 ÷ 16 = 1 ems
+	h6 = 16 pixels → 16 ÷ 16 = 1 ems*/
+
+/* ====== Global Styles ============*/
+
+body {
+	font-family: Roboto, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:"Akzindenz-Grotesk Pro",Arial,sans-serif;
+}
+
+h1 {
+	font-size:1.5em;
+	line-height:1em;
+}
+
+h2 {
+	font-size:1.375em;
+	line-height:1.09em;
+}
+
+h3 {
+	font-size:1.25em;
+	line-height:1.2em;
+}
+h4 {
+	font-size: 1.125em;
+	line-height: 1em;
+}
+
+h5 {
+	font-size: 1em;
+	line-height: 1.125em;
+}
+
+h6 {
+	font-size: .875em;
+	line-height: 1.2857em;
+}
+
+
+/* ====== Utility Classes ============*/
+.feature {
+	text-align: center;
+	padding-bottom: 1em;
+	color: #fff;
+
+}
+
+.feature-black {
+	text-align: center;
+	padding-bottom: 1em;
+	color: #000;
+}
+
+.panel {
+	padding: 20px;
+	background-color:#f1f1f1;
+	box-sizing: border-box;
+	margin-top: 0.3%;
+}
+
+
+span {
+	color: #990033;
+	font-weight: 700;
+	font-family: Roboto, Arial, san-serif;
+}
+
+.black {
+	color: #000;
+	font-weight: 700;
+	font-family: Roboto, Arial, san-serif;
+	margin-left: 30px;
+    padding-bottom: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.maroon {
+	font-size: 1.2em;
+	color: #990033;
+	letter-spacing: -5px;
+}
+
+.golden {
+	font-size: 1.2em;
+    color: #ffb310;
+    letter-spacing: -4px;
+}
+
+.white {
+	font-size: 1.2em;
+    color: #fff;
+    letter-spacing: -4px;
+}
+
+.center {
+	width: 200px;
+}
+
+.vertical-rule {
+	border-left: 5px solid #990034;
+	padding-left: 10px;
+}
+
+.spacer {
+	padding-bottom: 30px;
+}
+
+/* ====== Navigation ======= */
+
+.navbar {
+	background-color: #000;
+	margin-top: .5em;
+	position: static;
+}
+
+.navbar ul {
+	list-style-type: none;
+	font: 1em bold Arial, sans-serif;
+	text-align: center;
+}
+
+.menu-item {
+	display: inline-block;
+	padding-right: 1.25em;
+}
+
+li a {
+	text-decoration: none;
+	color: #fff;
+	padding-right: 1em;
+	border-right: 1px solid #fff;
+}
+li a:hover {
+	color: #ffb310;
+}
+
+/* ======= Hero Unit ======= */
+
+.hero {
+	background-image: url("../images/bannerHome_1600x663_blur.jpg");
+	min-height: 633px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 3px 9px #5a5a5a;
+}
+
+
+.hero-text {
+	font: 5em "Akzindenz-Grotesk Pro", Roboto, "Arial Black", sans-serif;
+	text-align: right;
+    margin-top: 2em;
+    line-height: 1em;
+    padding-left: 1em;
+
+}
+
+
+/* ======== Main Content ======= */
+.intro {
+	background-color: #f1f1f1;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	height: 300px;
+	margin-top: .5em;
+}
+
+.intro-text {
+	font-size: 1.65em;
+}
+
+.container_sliding-boxes {
+	margin-top: 3em;
+}
+
+.career-opportunities {
+	background-color: black;
+}
+
+.app-deadline {
+	background-color: #ffb310;
+}
+
+.paying-college {
+	background-color: #990033;
+}
+
+h3.feature {
+	margin-top: 0;
+	padding-bottom: 3.125em;
+}
+
+.icon-apply, .icon-career, .icon-dollar-bill {
+	font-size: 3em;
+	color:white;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 1.5em;
+}
+
+.dates {
+	text-align: center;
+	padding-left: 20px;
+}
+
+.deadline {
+	text-align: center;
+}
+
+li.gold {
+	color: #ffb310;
+	font-weight: 200;
+	font-family: Roboto,Arial,san-serif;
+	display: block;
+}
+
+li.deadline {
+	display: block;
+	padding-bottom: 1em;
+}
+
+.slideout {
+	background-color: #f1f1f1;
+	padding: 2em;
+}
+
+
+#featured-lab {
+	margin-top: 50px;
+	background-color: #f1f1f1;
+}
+
+.subheader {
+	color: #000;
+	text-align: center;
+}
+
+h1.feature {
+	padding-top: 50px;
+}
+/*  ===== Video 1 ===== */
+
+div.video-container-1 {
+	width: 480px;
+	margin-bottom: 100px;
+	background-color: #000;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Video 2 =====*/
+div#video-player-box.col-1-2 {
+	width: 480px;
+	margin-left: 100px;
+	background: #000;
+	border: 1px solid #000;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+#video-2 {
+	margin-left: 80px;
+}
+
+/* Icon Buttons */
+.icon-fa-play, .icon-fa-pause, .icon-fa-fullscreen, .icon-volume-up, .icon-volume-down {
+	color: #990033;
+}
+/*  ===== Footer ===== */
+
+footer{
+	background-color: #000;
+	margin-top: 3em;
+}
+
+address {
+	text-align: left;
+	color: #fff;
+	padding: 2em;
+}
+
+a.email {
+	color: #ffb310;
+}
+
+.social {
+	float: right;
+}
+
+.icon-twitter, .icon-facebook, .icon-rss {
+	font-size: 2em;
+	color: #ffb310;
+	display: inline-block;
+	cursor: pointer;
+	padding-top: 2em;
+	padding-left: .25em;
+	font-family: asu-microsite;
+}
+
+/* ===== Video 2 =====*/
+div#video-player-box.col-1-2: {
+	width: 480px;
+	height: 270px;
+	margin-left: 80px;
+	padding-left: 80px;
+}
+
+
+/* ======= Courses Content ======= */
+.hero2 {
+	background-image: url("../images/bannerCourses.jpg");
+	min-height: 400px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 3px 9px #5a5a5a;
+}
+
+#filters {
+    margin-top: 1.65em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#levels, #focus {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+	height: 5px;
+	border: 0;
+	background-color: #990033;
+    padding-right: 1em;
+    margin-right: 75%;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+hr.wide {
+	margin-top: 3px;
+	margin-bottom: 30px;
+	width: 192px;
+	height: 5px;
+	border: 0;
+	background-color: #990034;
+	color: #990033;
+    margin-left: 1.5625em;
+
+}
+
+aside > button {
+	width: 220px;
+	padding: 5px;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+button.line {
+	margin: 7px auto;
+	padding: 10px;
+	border: 3px solid #903;
+	border-radius: 10px;
+	background: #FFF;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-ms-transition: background 0.5s;
+	transition: background 0.5s;
+	color: #903!important;
+	font-weight: 700;
+	font-size: 1em;
+	font-family: Arial;
+}
+
+aside > button:hover {
+	background: #903;
+	color: #FFF!important;
+}
+
+button#reset {
+	margin-top: 30px;
+	background: #903;
+	-webkit-transition: background 0.5s;
+	-moz-transition: background 0.5s;
+	-ms-transition: background 0.5s;
+	transition: background 0.5s;
+	color: #fff!important;
+	border: 3px solid #fff;
+}
+
+button#reset:hover {
+	background: #ffb310;
+}
+
+#courses {
+    font-size: 1.25em;
+    line-height: 1.5em;
+}
+
+#allCourses {
+	padding-left: 1em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul#courses li {
+	list-style-type: none;
+}
+
+
+/* ======= Resources Content ======= */
+.hero3 {
+	background-image: url("../images/bannerResources.jpg");
+	min-height: 400px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 3px 9px #5a5a5a;
+}
+
+.round {
+	width: 120px;
+	height: 120px;
+    border: 5px solid #990033;
+    border-radius: 100%;
+    background-color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30%;
+    padding-top: 15%;
+}
+
+.icon-briefcase-case-two,
+.icon-stethoscope,
+.icon-home,
+.icon-dollar-1 {
+	font-size: 2.5em;
+    text-align: center;
+    font-family: asu-microsite;
+}
+
+/* Form */
+
+form li {
+	list-style-type: none;
+}
+form fieldset {
+	border: 5px solid #990033;
+    border-radius: 10px;
+	background-color: #f1f1f1;
+	
+}
+
+form fieldset legend {
+	font-size: 1.5em;
+	color: #4f5557;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+form fieldset label {
+	font-size: 1.25em;
+}
+
+input {
+	vertical-align: middle;
+	width: 16px;
+    height: 16px;
+    margin-bottom: 7px;
+    
+}
+
+input.resetBtn {
+	width: 213px;
+    height: 44px;
+    margin-left: 20px;
+    margin-top: 6px;
+    background: #903;
+    color: #fff;
+    border: 2px solid #903;
+    border-radius: 10px;
+    font-weight: 700;
+	font-size: 1em;
+	font-family: Arial;
+}
+
+button#resultsBtn {
+	margin-left: 38px;
+}
+button:hover {
+	background: #903;
+	color: #FFF!important;
+}
+
+.resultsText {
+    padding-top: 150px;
+    font-size: 1.25em;
+    padding-left: 20px;
+    color: #4F5557;
+    font-weight: bold;
+}
+
+.linkColor a {
+	color: #990033;
+	padding-left: 75px;
+	font-size: 1.15em;
+}
+
+/*===== Careers Content =====*/
+.hero4 {
+	background-image: url("../images/bannerCareers.jpg");
+	min-height: 400px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 3px 9px #5a5a5a;
+}
+
+.source {
+	font-size: 10pt;
+	font-style: italic;
+	color: #4f5557;
+	padding: 20px;
+	margin-left: 184px;
+	margin-top: 30px;
+}
+
+
+/*===== Gallery Content =====*/
+.hero5 {
+	background-image: url("../images/bannerGallery.jpg");
+	min-height: 400px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 3px 9px #5a5a5a;
+
+}
+
+.frame {
+	padding: 10px;
+	background-color: #000;
+	box-sizing: border-box;
+	margin: 3.5%;
+	-webkit-box-shadow: 0px 3px 9px #5a5a5a;
+	-moz-box-shadow: 0px 3px 9px #5a5a5a;
+	box-shadow: 0px 3px 9px #5a5a5a;
+}
